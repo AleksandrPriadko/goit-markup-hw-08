@@ -1,0 +1,46 @@
+.logo {
+    display: inline-flex;
+    margin: 0px;
+    margin-right: 95px;
+    text-decoration: none;
+}
+
+.logo__fontweb {
+    font-family: "Raleway";
+    font-style: $font-style;
+    font-weight: bold;
+    font-size: 26px;
+    color: $color-blue;
+    margin: 0px;
+}
+
+.logo__fontstudio {
+    font-family: "Raleway";
+    font-style: $font-style;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 0px;
+    color: #212121;
+}
+
+.logo-contakts {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.logo-contakts__fontweb {
+    font-family: "Raleway";
+    font-style: $font-style;
+    font-weight: bold;
+    font-size: 26px;
+    color: $color-blue;
+    margin: 0px;
+}
+
+.logo-contakts__fontstudio {
+    font-family: "raleway";
+    font-style: $font-style;
+    font-weight: bold;
+    font-size: 26px;
+    color: #ffffff;
+}

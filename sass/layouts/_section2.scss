@@ -1,0 +1,58 @@
+/*СЕКЦИЯ 2*/
+.info {
+    background-color: #ffffff;
+    min-width: 1600px;
+}
+
+.heading {
+    text-align: center;
+    font-family: $font-famili;
+    font-style: $font-style;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #212121;
+    margin: 0px;
+    margin-bottom: 50px;
+}
+
+.img__list {
+    display: flex;
+    margin: 0px;
+    padding-left: 0px;
+    position: relative;
+    width: 370px;
+    height: 294px;
+}
+
+.img__item {
+    display: block;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay__text {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    margin: 0;
+}

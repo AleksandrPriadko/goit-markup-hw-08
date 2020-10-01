@@ -1,258 +1,268 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto:wght@500;700;900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="./css/styles.css" />
-		<link rel="stylesheet" href="./css/normalize.css" />
-	</head>
 
-	<body>
-		<header class="header">
-			<div class="container flexbox">
-				<nav class="navigation">
-					<a href="./index.html" class="logo">
-						<span class="fontweb">Web</span>
-						<span class="fontstudio">Studio</span>
-					</a>
-					<ul class="list menu-list">
-						<li class="menu-item">
-							<a href="./index.html" class="menu-link">Студия</a>
-						</li>
-						<li class="menu-item">
-							<a href="./portfolio.html" class="menu-link active-link">Портфолио</a>
-						</li>
-						<li class="menu-item"><a href="" class="menu-link">Контакты</a></li>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto:wght@500;700;900&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="./css/portfolio.min.css" />
+	<link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="container flexbox">
+			<nav class="navigation">
+				<a href="./index.html" class="logo">
+					<span class="logo__fontweb">Web</span>
+					<span class="logo__fontstudio">Studio</span>
+				</a>
+				<ul class="list menu">
+					<li class="menu__item">
+						<a href="./index.html" class="menu__link ">Студия</a>
+					</li>
+					<li class="menu__item">
+						<a href="./portfolio.html" class="menu__link active-link">Портфолио</a>
+					</li>
+					<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+				</ul>
+			</nav>
+
+			<a href="mailto:info@example.com" class="address-link textstyle">
+				<svg class="address-link__icon-mail">
+					<use href="./images/icon/socweb/symbol-defs-g.svg#envelope"></use>
+				</svg>
+				info@example.com
+			</a>
+
+			<a href="tel:+380991111111" class="phone-link textstyle">
+				<svg class="phone-link__icon-phone">
+					<use href="./images/icon/socweb/symbol-defs-g.svg#smartphone"></use>
+				</svg>
+				+38 099 111 11 11
+			</a>
+		</div>
+	</header>
+	<main>
+		<article class="article">
+			<section class="section portfolio-items">
+				<div class="container block-nav-portfolio">
+					<ul class="nav-portfolio flexbox">
+						<li class="portfolio-link"><a href="" class="botton">Все</a></li>
+						<li class="portfolio-link"><a href="" class="botton">Веб-сайты</a></li>
+						<li class="portfolio-link"><a href="" class="botton">Приложения</a></li>
+						<li class="portfolio-link"><a href="" class="botton">Дизайн</a></li>
+						<li class="portfolio-link"><a href="" class="botton">Маркетинг</a></li>
 					</ul>
-				</nav>
-
-				<a href="mailto:info@example.com" class="address-link textstyle">
-					<svg class="svg-mail">
-						<use href="./images/icon/socweb/symbol-defs-g.svg#envelope"></use>
-					</svg>
-					info@example.com
-				</a>
-
-				<a href="tel:+380991111111" class="phonelink textstyle">
-					<svg class="svg-phone">
-						<use href="./images/icon/socweb/symbol-defs-g.svg#smartphone"></use>
-					</svg>
-					+38 099 111 11 11
-				</a>
+				</div>
+				<div class="container">
+					<ul class="flexbox-port">
+						<li class="list-port">
+							<a href="">
+								<div class="container-box">
+									<div class="overlay-box">
+										<img src="./images/portfolio/img.jpg" alt="Альтернативный текст"
+											class="img-size-portfolio" />
+									</div>
+									<div>
+										<p>Технокряк</p>
+										<p>Веб-сайт</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="list-port">
+							<a href="">
+								<div class="container-box">
+									<div class="overlay-box">
+										<img src="./images/portfolio/img(1).jpg" alt="Альтернативный текст"
+											class="img-size-portfolio" />
+									</div>
+									<div>
+										<p>Постер New Orlean vs Golden Star</p>
+										<p>Дизайн</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="list-port">
+							<a href="">
+								<div class="container-box">
+									<div class="overlay-box">
+										<img src="./images/portfolio/img(2).jpg" alt="Альтернативный текст"
+											class="img-size-portfolio" />
+									</div>
+									<div>
+										<p>Ресторан Seafood</p>
+										<p>Приложение</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="list-port">
+							<a href="">
+								<div class="container-box">
+									<div class="overlay-box">
+										<img src="./images/portfolio/img(3).jpg" alt="Альтернативный текст"
+											class="img-size-portfolio" />
+									</div>
+									<div>
+										<p>Проект Prime</p>
+										<p>Маркетинг</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="list-port">
+							<a href="">
+								<div class="container-box">
+									<div class="overlay-box">
+										<img src="./images/portfolio/img(4).jpg" alt="Альтернативный текст"
+											class="img-size-portfolio" />
+									</div>
+									<div>
+										<p>Проект Boxes</p>
+										<p>Приложение</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="list-port">
+							<a href="">
+								<div class="container-box">
+									<div class="overlay-box">
+										<img src="./images/portfolio/img(5).jpg" alt="Альтернативный текст"
+											class="img-size-portfolio" />
+									</div>
+									<div>
+										<p>Inspiration has no Borders</p>
+										<p>Веб-сайт</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="list-port">
+							<a href="">
+								<div class="container-box">
+									<div class="overlay-box">
+										<img src="./images/portfolio/img(6).jpg" alt="Альтернативный текст"
+											class="img-size-portfolio" />
+									</div>
+									<div>
+										<p>Издание Limited Edition</p>
+										<p>Дизайн</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="list-port">
+							<a href="">
+								<div class="container-box">
+									<div class="overlay-box">
+										<img src="./images/portfolio/img(7).jpg" alt="Альтернативный текст"
+											class="img-size-portfolio" />
+									</div>
+									<div>
+										<p>Проект LAB</p>
+										<p>Маркетинг</p>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="list-port">
+							<a href="">
+								<div class="container-box">
+									<div class="overlay-box">
+										<img src="./images/portfolio/img(8).jpg" alt="Альтернативный текст"
+											class="img-size-portfolio" />
+									</div>
+									<div>
+										<p>Growing Business</p>
+										<p>Приложение</p>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</article>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="contakts contakts--style">
+				<div>
+					<h2 lang="en" class="logo-contakts">
+						<span class="logo-contakts__fontweb">Web</span>
+						<span class="logo-contakts__fontstudio">Studio</span>
+					</h2>
+					<div class="address">
+						<address class="address__text">г. Киев, пр-т Леси Украинки, 26</address>
+						<p class="address__p">
+							<a class="address__link" href="mailto:info@example.com">info@example.com</a>
+						</p>
+						<p class="address__p">
+							<a class="address__link" href="tel:+380991111111">+38 099 111 11 11</a>
+						</p>
+					</div>
+				</div>
 			</div>
-		</header>
-		<main>
-			<article class="article">
-				<section class="section portfolio-items">
-					<div class="container block-nav-portfolio">
-						<ul class="nav-portfolio flexbox">
-							<li class="portfolio-link"><a href="" class="botton">Все</a></li>
-							<li class="portfolio-link"><a href="" class="botton">Веб-сайты</a></li>
-							<li class="portfolio-link"><a href="" class="botton">Приложения</a></li>
-							<li class="portfolio-link"><a href="" class="botton">Дизайн</a></li>
-							<li class="portfolio-link"><a href="" class="botton">Маркетинг</a></li>
-						</ul>
-					</div>
-					<div class="container">
-						<ul class="flexbox-port">
-							<li class="list-port">
-								<a href="">
-									<div class="container-box">
-										<div class="overlay-box">
-											<img src="./images/portfolio/img.jpg" alt="Альтернативный текст" class="img-size-portfolio" />
-										</div>
-										<div>
-											<p>Технокряк</p>
-											<p>Веб-сайт</p>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li class="list-port">
-								<a href="">
-									<div class="container-box">
-										<div class="overlay-box">
-											<img src="./images/portfolio/img(1).jpg" alt="Альтернативный текст" class="img-size-portfolio" />
-										</div>
-										<div>
-											<p>Постер New Orlean vs Golden Star</p>
-											<p>Дизайн</p>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li class="list-port">
-								<a href="">
-									<div class="container-box">
-										<div class="overlay-box">
-											<img src="./images/portfolio/img(2).jpg" alt="Альтернативный текст" class="img-size-portfolio" />
-										</div>
-										<div>
-											<p>Ресторан Seafood</p>
-											<p>Приложение</p>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li class="list-port">
-								<a href="">
-									<div class="container-box">
-										<div class="overlay-box">
-											<img src="./images/portfolio/img(3).jpg" alt="Альтернативный текст" class="img-size-portfolio" />
-										</div>
-										<div>
-											<p>Проект Prime</p>
-											<p>Маркетинг</p>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li class="list-port">
-								<a href="">
-									<div class="container-box">
-										<div class="overlay-box">
-											<img src="./images/portfolio/img(4).jpg" alt="Альтернативный текст" class="img-size-portfolio" />
-										</div>
-										<div>
-											<p>Проект Boxes</p>
-											<p>Приложение</p>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li class="list-port">
-								<a href="">
-									<div class="container-box">
-										<div class="overlay-box">
-											<img src="./images/portfolio/img(5).jpg" alt="Альтернативный текст" class="img-size-portfolio" />
-										</div>
-										<div>
-											<p>Inspiration has no Borders</p>
-											<p>Веб-сайт</p>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li class="list-port">
-								<a href="">
-									<div class="container-box">
-										<div class="overlay-box">
-											<img src="./images/portfolio/img(6).jpg" alt="Альтернативный текст" class="img-size-portfolio" />
-										</div>
-										<div>
-											<p>Издание Limited Edition</p>
-											<p>Дизайн</p>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li class="list-port">
-								<a href="">
-									<div class="container-box">
-										<div class="overlay-box">
-											<img src="./images/portfolio/img(7).jpg" alt="Альтернативный текст" class="img-size-portfolio" />
-										</div>
-										<div>
-											<p>Проект LAB</p>
-											<p>Маркетинг</p>
-										</div>
-									</div>
-								</a>
-							</li>
-							<li class="list-port">
-								<a href="">
-									<div class="container-box">
-										<div class="overlay-box">
-											<img src="./images/portfolio/img(8).jpg" alt="Альтернативный текст" class="img-size-portfolio" />
-										</div>
-										<div>
-											<p>Growing Business</p>
-											<p>Приложение</p>
-										</div>
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</section>
-			</article>
-		</main>
-		<footer class="footer">
-			<div class="container">
-				<div class="footer-box contakts">
-					<div class="content-footer">
-						<h2 lang="en" class="logo-footer">
-							<span class="fontweb">Web</span>
-							<span class="fontstudio1">Studio</span>
-						</h2>
-						<div class="address">
-							<address>г. Киев, пр-т Леси Украинки, 26</address>
-							<p>
-								<a href="mailto:info@example.com">info@example.com</a>
-							</p>
-							<p>
-								<a href="tel:+380991111111">+38 099 111 11 11</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="footer-box socials">
-					<div>
-						<h3 class="footer-subject">Присоединяйтесь</h3>
-						<ul class="list-join">
-							<li>
-								<a href="" class="soc-box stylesvg">
-									<svg class="svg-soc">
-										<use href="./images/icon/socweb/symbol-defs-g.svg#instagram"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="" class="soc-box stylesvg">
-									<svg class="svg-soc">
-										<use href="./images/icon/socweb/symbol-defs-g.svg#twitter"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="" class="soc-box stylesvg">
-									<svg class="svg-soc">
-										<use href="./images/icon/socweb/symbol-defs-g.svg#facebook"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="" class="soc-box stylesvg">
-									<svg class="svg-soc">
-										<use href="./images/icon/socweb/symbol-defs-g.svg#linkedin"></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-box">
-					<div class="form-mail-block">
-						<h2>Подпишитесь на рассылку</h2>
-						<div class="form-send">
-							<form action="" method="POST">
-								<input type="email" name="mail" placeholder="E-mail" />
-							</form>
-							<button class="btn-send">
-								Подписаться
-								<svg class="icon-send">
-									<use href="./images/icon/socweb/symbol-defs-g.svg#icon-send"></use>
+			<div class="contakts contakts--socials">
+				<div>
+					<h3 class="subject-socials">Присоединяйтесь</h3>
+					<ul class="social-join__list">
+						<li class="social-join__item">
+							<a href="" class="social__link style--svg">
+								<svg class="social__icon">
+									<use href="./images/icon/socweb/symbol-defs-g.svg#instagram"></use>
 								</svg>
-							</button>
-						</div>
+							</a>
+						</li>
+						<li class="social-join__item">
+							<a href="" class="social__link style--svg">
+								<svg class="social__icon">
+									<use href="./images/icon/socweb/symbol-defs-g.svg#twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-join__item">
+							<a href="" class="social__link style--svg">
+								<svg class="social__icon">
+									<use href="./images/icon/socweb/symbol-defs-g.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social-join__item">
+							<a href="" class="social__link style--svg">
+								<svg class="social__icon">
+									<use href="./images/icon/socweb/symbol-defs-g.svg#linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="contakts">
+				<div class="block-form">
+					<h2 class="block-form__heading">Подпишитесь на рассылку</h2>
+					<div class="form-send">
+						<form class="form-send__mail" action="" method="POST">
+							<input class="form-send__email" type="email" name="mail" placeholder="E-mail" />
+						</form>
+						<button class="btn-send">
+							Подписаться
+							<svg class="btn-send__icon">
+								<use href="./images/icon/socweb/symbol-defs-g.svg#icon-send"></use>
+							</svg>
+						</button>
 					</div>
 				</div>
 			</div>
-		</footer>
-	</body>
+		</div>
+	</footer>
+</body>
+
 </html>

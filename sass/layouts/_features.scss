@@ -1,0 +1,95 @@
+.features {
+    display: flex;
+    margin-top: 0px;
+    padding-left: 0px;
+    margin-bottom: 95px;
+}
+
+.features__list {
+    display: block;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+
+
+.features__heading {
+    font-family: $font-famili;
+    font-style: $font-style;
+    font-weight: bold;
+    font-size: $font-size;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.features__text {
+    font-family: $font-famili;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0px;
+    display: block;
+    width: 270px;
+    height: 75px;
+}
+
+/* СПУТНИК */
+.features__list:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: url(../images/icon/Group.svg), #f5f4fa;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+/* ЧАСЫ */
+.features__list:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: url(../images/icon/clock.svg), #f5f4fa;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+/* Компьютер */
+.features__list:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: url(../images/icon/diagram.svg), #f5f4fa;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+/* Астронафт */
+.features__list:nth-child(4)::before {
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: url(../images/icon/astronaut.svg), #f5f4fa;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+}
