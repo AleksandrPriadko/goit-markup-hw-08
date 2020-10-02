@@ -1,46 +1,70 @@
 .logo {
-    display: inline-flex;
-    margin: 0px;
-    margin-right: 95px;
-    text-decoration: none;
+	display: inline-flex;
+	margin: 0px;
+	margin-right: 95px;
+	text-decoration: none;
 }
 
 .logo__fontweb {
-    font-family: "Raleway";
-    font-style: $font-style;
-    font-weight: bold;
-    font-size: 26px;
-    color: $color-blue;
-    margin: 0px;
+	font-family: "Raleway";
+	font-style: $font-style;
+	font-weight: bold;
+	font-size: 26px;
+	color: $color-blue;
+	margin: 0px;
+
+	@media screen and (max-width: 768px) {
+		font-size: 24px;
+		line-height: 28px;
+	}
 }
 
 .logo__fontstudio {
-    font-family: "Raleway";
-    font-style: $font-style;
-    font-weight: bold;
-    font-size: 26px;
-    margin: 0px;
-    color: #212121;
+	font-family: "Raleway";
+	font-style: $font-style;
+	font-weight: bold;
+	font-size: 26px;
+	margin: 0px;
+	color: #212121;
+
+	@media screen and (max-width: 768px) {
+		font-size: 24px;
+		line-height: 28px;
+	}
 }
 
 .logo-contakts {
-    margin-top: 0px;
-    margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	margin-top: 0px;
+	margin-bottom: 20px;
 }
 
 .logo-contakts__fontweb {
-    font-family: "Raleway";
-    font-style: $font-style;
-    font-weight: bold;
-    font-size: 26px;
-    color: $color-blue;
-    margin: 0px;
+	font-family: "Raleway";
+	font-style: $font-style;
+	font-weight: bold;
+	font-size: 26px;
+	color: $color-blue;
+	margin: 0px;
+
+	@media screen and (max-width: 768px) {
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 0.03em;
+	}
 }
 
 .logo-contakts__fontstudio {
-    font-family: "raleway";
-    font-style: $font-style;
-    font-weight: bold;
-    font-size: 26px;
-    color: #ffffff;
+	font-family: "raleway";
+	font-style: $font-style;
+	font-weight: bold;
+	font-size: 26px;
+	color: #ffffff;
+
+	@media screen and (max-width: 768px) {
+		font-size: 24px;
+		line-height: 28px;
+		letter-spacing: 0.03em;
+	}
 }

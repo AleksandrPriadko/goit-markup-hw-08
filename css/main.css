@@ -410,6 +410,13 @@ body {
   margin: 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .logo__fontweb {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .logo__fontstudio {
   font-family: "Raleway";
   font-style: normal;
@@ -419,7 +426,20 @@ body {
   color: #212121;
 }
 
+@media screen and (max-width: 768px) {
+  .logo__fontstudio {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .logo-contakts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 0px;
   margin-bottom: 20px;
 }
@@ -433,12 +453,28 @@ body {
   margin: 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .logo-contakts__fontweb {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
+}
+
 .logo-contakts__fontstudio {
   font-family: "raleway";
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-contakts__fontstudio {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+  }
 }
 
 .btn {
@@ -738,6 +774,13 @@ body {
 .contakts--style {
   width: 224px;
   margin-right: 70px;
+}
+
+@media screen and (max-width: 480px) {
+  .contakts--style {
+    /* display: flex; */
+    margin-right: 0px;
+  }
 }
 
 .address {
@@ -1726,8 +1769,6 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
   }
 }
 
@@ -1747,7 +1788,7 @@ body {
           align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  /* width: 170px; */
+  width: 170px;
   height: 90px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
@@ -1755,7 +1796,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .client__link {
-    /* width: 210px; */
+    width: 210px;
   }
 }
 
@@ -1769,16 +1810,15 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  .client__list {
+  .client__list:nth-child(2n + 1) {
     margin-right: 30px;
-    margin-bottom: 30px;
-    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
-        flex-basis: calc((100% - 4 * 15px) / 2);
   }
 }
 
-.client__list:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 480px) {
+  .client__list:nth-child(-n + 4) {
+    margin-bottom: 30px;
+  }
 }
 
 .client__list:nth-of-type(1) .client__icon {
