@@ -1,0 +1,9 @@
+.navigation {
+	display: flex;
+	align-content: center;
+	margin-right: auto;
+
+	@media screen and (max-width: 480px) {
+		display: none;
+	}
+}

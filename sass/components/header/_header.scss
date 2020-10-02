@@ -1,0 +1,31 @@
+/* ШАПКА */
+
+.header {
+	background: $b-cheader;
+	/* max-width: 1600px; */
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 0px;
+
+	@media screen and (min-width: 480px) {
+		width: 480px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 768px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
+}
+
+/* .header .flexbox {
+	justify-content: flex-end;
+	align-items: center;
+
+	@media screen and (max-width: 480px) {
+		justify-content: flex-start;
+	}
+} */

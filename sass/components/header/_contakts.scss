@@ -1,0 +1,100 @@
+/* КОНТАКТЫ */
+
+.contakts-header {
+	/* display: inline-flex;
+	justify-content: center;
+	align-items: center; */
+
+	@media screen and (max-width: 480px) {
+		display: none;
+	}
+	@media screen and (min-width: 768px) {
+		width: 768px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
+}
+.textstyle {
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+	font-family: $font-famili;
+	font-style: $font-style;
+	font-weight: 500;
+	font-size: $font-size;
+	letter-spacing: 0.02em;
+	color: #757575;
+	text-decoration: none;
+	transition-duration: 250ms;
+
+	&:not(:last-child) {
+		margin-right: 50px;
+	}
+}
+
+.address-link__icon-mail {
+	width: 16px;
+	height: 12px;
+	margin-right: 10px;
+	fill: currentColor;
+}
+
+.address-link:hover {
+	fill: $color-blue;
+	color: $color-blue;
+}
+
+.phone-link__icon-phone {
+	width: 10px;
+	height: 16px;
+	margin-right: 10px;
+	fill: currentColor;
+}
+
+.phone-link:hover {
+	fill: $color-blue;
+	color: $color-blue;
+}
+
+.article {
+	display: block;
+	margin: 0px;
+}
+
+.contakts--style {
+	width: 224px;
+
+	margin-right: 70px;
+}
+
+.address {
+	display: block;
+	margin: 0px;
+}
+
+.address__text {
+	font-family: $font-famili;
+	font-style: $font-style;
+	font-weight: 400;
+	font-size: $font-size;
+	line-height: 34px;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+	margin: 0px;
+}
+
+.address__link {
+	font-style: $font-style;
+	font-weight: $font-weight;
+	font-size: $font-size;
+	line-height: 34px;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+	margin: 0px;
+	text-decoration: none;
+}
+
+.address__p {
+	margin: 0px;
+}
