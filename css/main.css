@@ -1740,7 +1740,6 @@ body {
 
 .comand {
   background-color: #f5f4fa;
-  /* min-width: 1600px; */
 }
 
 @media screen and (min-width: 480px) {
@@ -1768,7 +1767,7 @@ body {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .heading-our-team {
     font-size: 28px;
     line-height: 33px;
@@ -1781,18 +1780,54 @@ body {
   padding-left: 0px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .team-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-item {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
 .team-item__list {
   padding-right: 0px;
   list-style: none;
 }
 
-.team-item__list:not(:last-child) {
-  margin-right: 30px;
+.team-item__list:nth-child(-n + 3) {
+  margin-right: 0px;
 }
 
-@media screen and (max-width: 480px) {
-  .team-item__list:not(:last-child) {
-    margin-right: 0px;
+@media screen and (min-width: 1200px) {
+  .team-item__list:nth-child(-n + 3) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .team-item__list:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .team-item__list:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-item__list:nth-child(-n + 2) {
+    margin-bottom: 0px;
   }
 }
 
@@ -1806,10 +1841,16 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .team-block {
     width: 100%;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .team-block {
+    width: 354px;
   }
 }
 
@@ -1819,7 +1860,13 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
+  .team-block__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .team-block__img {
     width: 100%;
   }
