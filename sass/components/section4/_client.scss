@@ -1,16 +1,24 @@
 .client {
-	display: flex;
+	display: inline-flex;
 	justify-content: center;
-	align-items: center;
+	/* align-items: center; */
 	margin: 0px;
 	padding-left: 0px;
 
-	@media screen and (max-width: 480px) {
+	@media screen and (min-width: 480px) {
 		display: flex;
 		flex-wrap: wrap;
 	}
 }
 
+@media screen and (max-width: 479px) {
+	.client {
+		display: inline-block;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+}
 .client__icon {
 	margin-right: 0px;
 }
@@ -26,6 +34,11 @@
 	transition-duration: 250ms;
 
 	@media screen and (max-width: 480px) {
+		display: flex;
+		justify-content: center;
+		width: 170px;
+	}
+	@media screen and (min-width: 480px) {
 		width: 210px;
 	}
 
@@ -40,12 +53,12 @@
 	list-style: none;
 
 	&:nth-child(2n + 1) {
-		@media screen and (max-width: 480px) {
+		@media screen and (min-width: 480px) {
 			margin-right: 30px;
 		}
 	}
 	&:nth-child(-n + 4) {
-		@media screen and (max-width: 480px) {
+		@media screen and (min-width: 480px) {
 			margin-bottom: 30px;
 		}
 	}

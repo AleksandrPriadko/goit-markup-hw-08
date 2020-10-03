@@ -21,6 +21,47 @@
 	display: inline-flex;
 } */
 
+.contakts--style {
+	width: 224px;
+
+	margin-right: 70px;
+
+	@media screen and (max-width: 480px) {
+		/* display: flex; */
+		margin-right: 0px;
+	}
+}
+
+.address {
+	display: block;
+	margin: 0px;
+}
+
+.address__text {
+	font-family: $font-famili;
+	font-style: $font-style;
+	font-weight: 400;
+	font-size: $font-size;
+	line-height: 34px;
+	letter-spacing: 0.03em;
+	color: #ffffff;
+	margin: 0px;
+}
+
+.address__link {
+	font-style: $font-style;
+	font-weight: $font-weight;
+	font-size: $font-size;
+	line-height: 34px;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+	margin: 0px;
+	text-decoration: none;
+}
+
+.address__p {
+	margin: 0px;
+}
 /* ФОРМА */
 
 .block-form {

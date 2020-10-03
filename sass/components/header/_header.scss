@@ -2,7 +2,7 @@
 
 .header {
 	background: $b-cheader;
-	/* max-width: 1600px; */
+
 	padding-top: 25px;
 	padding-bottom: 25px;
 	margin-left: auto;
@@ -16,16 +16,18 @@
 	@media screen and (min-width: 768px) {
 		width: 768px;
 	}
+	@media screen and (max-width: 1199px) {
+		padding-top: 21px;
+		padding-bottom: 21px;
+	}
 	@media screen and (min-width: 1200px) {
 		width: 1200px;
 	}
 }
 
-/* .header .flexbox {
-	justify-content: flex-end;
-	align-items: center;
-
-	@media screen and (max-width: 480px) {
+.header .flexbox {
+	@media screen and (min-width: 1200px) {
 		justify-content: flex-start;
+		align-items: center;
 	}
-} */
+}

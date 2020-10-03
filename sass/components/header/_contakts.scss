@@ -5,14 +5,20 @@
 	justify-content: center;
 	align-items: center; */
 
-	@media screen and (max-width: 480px) {
+	/* @media screen and (min-width: 480px) {
+		width: 480px;
+	} */
+	@media screen and (max-width: 768px) {
 		display: none;
 	}
-	@media screen and (min-width: 768px) {
-		width: 768px;
+	@media screen and (max-width: 1199px) {
+		justify-content: flex-end;
+		align-items: center;
 	}
 	@media screen and (min-width: 1200px) {
-		width: 1200px;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 .textstyle {
@@ -30,14 +36,32 @@
 
 	&:not(:last-child) {
 		margin-right: 50px;
+
+		@media screen and (max-width: 1199px) {
+			margin-right: 0px;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		display: flex;
+		align-items: center;
+		font-size: 12px;
+		line-height: 14px;
 	}
 }
-
+.address-link {
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 10px;
+	}
+}
 .address-link__icon-mail {
 	width: 16px;
 	height: 12px;
 	margin-right: 10px;
 	fill: currentColor;
+	@media screen and (min-width: 768px) {
+		width: 14px;
+		height: 10px;
+	}
 }
 
 .address-link:hover {
@@ -50,6 +74,10 @@
 	height: 16px;
 	margin-right: 10px;
 	fill: currentColor;
+	@media screen and (min-width: 768px) {
+		width: 10px;
+		height: 14px;
+	}
 }
 
 .phone-link:hover {
@@ -59,47 +87,5 @@
 
 .article {
 	display: block;
-	margin: 0px;
-}
-
-.contakts--style {
-	width: 224px;
-
-	margin-right: 70px;
-
-	@media screen and (max-width: 480px) {
-		/* display: flex; */
-		margin-right: 0px;
-	}
-}
-
-.address {
-	display: block;
-	margin: 0px;
-}
-
-.address__text {
-	font-family: $font-famili;
-	font-style: $font-style;
-	font-weight: 400;
-	font-size: $font-size;
-	line-height: 34px;
-	letter-spacing: 0.03em;
-	color: #ffffff;
-	margin: 0px;
-}
-
-.address__link {
-	font-style: $font-style;
-	font-weight: $font-weight;
-	font-size: $font-size;
-	line-height: 34px;
-	letter-spacing: 0.03em;
-	color: rgba(255, 255, 255, 0.6);
-	margin: 0px;
-	text-decoration: none;
-}
-
-.address__p {
 	margin: 0px;
 }
