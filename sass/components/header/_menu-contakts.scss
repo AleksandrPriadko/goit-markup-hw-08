@@ -1,0 +1,24 @@
+@media screen and (max-width: 767px) {
+	.btn-menu__contakts {
+		display: inline-flex;
+		padding: 0;
+		margin: 0;
+
+		background-color: transparent;
+		border: none;
+	}
+	.flexbox__btn-menu {
+		justify-content: space-between;
+		align-items: center;
+	}
+	.btn-menu__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media screen and (min-width: 768px) {
+	.btn-menu__contakts {
+		display: none;
+	}
+}
