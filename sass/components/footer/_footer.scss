@@ -260,8 +260,17 @@
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
+	padding-left: 16px;
 
 	background-color: rgba(0, 0, 0, 0);
+
+	font-family: $font-famili;
+	font-style: $font-style;
+	font-weight: $font-weight;
+	font-size: 16px;
+	letter-spacing: 0.03em;
+
+	color: #ffffff;
 
 	&::placeholder {
 		font-family: $font-famili;
@@ -272,7 +281,7 @@
 
 		color: rgba(255, 255, 255, 0.6);
 
-		padding-left: 16px;
+		/* padding-left: 16px; */
 	}
 	@media screen and (max-width: 480px) {
 		width: 100%;

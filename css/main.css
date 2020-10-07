@@ -428,7 +428,10 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .header .flexbox {
+  .flexbox .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -724,14 +727,8 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .btn-menu__contakts {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    border: none;
+  .header {
+    position: relative;
   }
   .flexbox__btn-menu {
     -webkit-box-pack: justify;
@@ -740,14 +737,70 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    /* border: 3px solid #ff2200; */
   }
-  .btn-menu__icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .btn-menu__contakts {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    /* border: 3px solid #ff2200; */
+  }
+  .btn-menu__contakts.is-open .icon-cross {
+    display: block;
+  }
+  .btn-menu__contakts.is-open .icon-menu {
+    display: none;
+  }
+  .btn-menu__icon {
+    width: 24px;
+    height: 19px;
+  }
+  .btn-menu__contakts .icon-cross {
+    display: none;
+  }
+  .btn-menu__contakts:hover .btn-menu__icon,
+  .btn-menu__contakts:focus .btn-menu__icon {
+    fill: #2196f3;
+    cursor: pointer;
+  }
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+  .menu-container.is-open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -879,30 +932,12 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  /* width: 100%;
-	height: 100%; */
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 480px) {
-  .backdrop {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .backdrop {
-    width: 768px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .backdrop {
-    width: 1200px;
-  }
 }
 
 .is-hidden {
@@ -922,8 +957,6 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  /* min-width: 528px;
-    min-height: 581px; */
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -936,21 +969,22 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .modal {
-    width: 480px;
+    max-width: 450px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .modal {
-    width: 768px;
+    width: 450px;
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .modal {
-    width: 1200px;
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -1006,6 +1040,22 @@ body {
   padding-bottom: 40px;
 }
 
+.modal-block h2 {
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin: 0px 0px 12px 0px;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-block h2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    line-height: 30px;
+  }
+}
+
 .form-block {
   position: relative;
   display: inline-block;
@@ -1014,13 +1064,6 @@ body {
 
 .forms a {
   color: #2196f3;
-}
-
-.modal-block h2 {
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin: 0px 0px 12px 0px;
 }
 
 .form-items {
@@ -1178,6 +1221,13 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (max-width: 1199px) {
+  .forms label {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .modal-form-send {
@@ -2451,7 +2501,14 @@ body {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  padding-left: 16px;
   background-color: rgba(0, 0, 0, 0);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .form-send__email::-webkit-input-placeholder {
@@ -2461,7 +2518,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
+  /* padding-left: 16px; */
 }
 
 .form-send__email:-ms-input-placeholder {
@@ -2471,7 +2528,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
+  /* padding-left: 16px; */
 }
 
 .form-send__email::-ms-input-placeholder {
@@ -2481,7 +2538,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
+  /* padding-left: 16px; */
 }
 
 .form-send__email::placeholder {
@@ -2491,7 +2548,7 @@ body {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
+  /* padding-left: 16px; */
 }
 
 @media screen and (max-width: 480px) {
