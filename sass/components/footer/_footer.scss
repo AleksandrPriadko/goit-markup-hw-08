@@ -15,12 +15,14 @@
 		width: 768px;
 	}
 	@media screen and (min-width: 1200px) {
-		width: 1200px;
+		width: 1600px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
 .footer .footer-container {
-	@media screen and (min-width: 768px) and (max-width: 1200px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -32,7 +34,7 @@
 }
 
 .contakts {
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -40,7 +42,7 @@
 			margin-bottom: 60px;
 		}
 	}
-	@media screen and (min-width: 768px) and (max-width: 1200px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		display: inline-flex;
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -59,18 +61,18 @@
 	/* width: 224px; */
 	margin-right: 70px;
 
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 1199px) {
 		margin-right: 0px;
 	}
 }
 .logo-contakts {
 	margin-top: 0px;
 	margin-bottom: 20px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		display: flex;
 		justify-content: center;
 	}
-	@media screen and (min-width: 768px) and (max-width: 1200px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		display: flex;
 		justify-content: center;
 	}
@@ -84,7 +86,7 @@
 	color: $color-blue;
 	margin: 0px;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		font-size: 24px;
 		line-height: 28px;
 		letter-spacing: 0.03em;
@@ -98,7 +100,7 @@
 	font-size: 26px;
 	color: #ffffff;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		font-size: 24px;
 		line-height: 28px;
 		letter-spacing: 0.03em;
@@ -106,7 +108,7 @@
 }
 .address {
 	margin: 0px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		display: flex;
 		flex-direction: column;
 	}
@@ -122,10 +124,10 @@
 	color: #ffffff;
 	margin: 0px;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		text-align: center;
 	}
-	@media screen and (min-width: 768px) and (max-width: 1200px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		text-align: center;
 	}
 }
@@ -143,10 +145,10 @@
 
 .address__p {
 	margin: 0px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		text-align: center;
 	}
-	@media screen and (min-width: 768px) and (max-width: 1200px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		text-align: center;
 	}
 }
@@ -154,11 +156,11 @@
 /* ПРИСОЕДИНЯЙСЯ */
 .contakts--socials {
 	margin-right: 93px;
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		display: block;
 		margin-right: 0px;
 	}
-	@media screen and (min-width: 768px) and (max-width: 1200px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		display: block;
 		padding-top: 13px;
 		margin-right: 0px;
@@ -177,10 +179,10 @@
 	margin-top: 0px;
 	margin-bottom: 20px;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		text-align: center;
 	}
-	@media screen and (min-width: 768px) and (max-width: 1200px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		text-align: center;
 	}
 }
@@ -191,7 +193,7 @@
 	padding-left: 0px;
 	margin: 0px;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		justify-content: center;
 	}
 }
@@ -220,16 +222,16 @@
 	margin-top: 0px;
 	margin-bottom: 20px;
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		text-align: center;
 	}
-	@media screen and (min-width: 768px) and (max-width: 1200px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		text-align: center;
 	}
 }
 
 .form-send {
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		display: flex;
 		flex-direction: column;
 	}
@@ -240,13 +242,13 @@
 
 .form-send__mail {
 	margin-right: 12px;
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 1199px) {
 		margin-right: 0px;
 		&:not(:last-child) {
 			margin-bottom: 20px;
 		}
 	}
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 479px) {
 		margin-right: 0px;
 		&:not(:last-child) {
 			margin-bottom: 20px;
@@ -283,12 +285,12 @@
 
 		/* padding-left: 16px; */
 	}
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 479px) {
 		width: 100%;
 		height: 50px;
 		justify-content: center;
 	}
-	@media screen and (min-width: 480px) and (max-width: 1200px) {
+	@media screen and (min-width: 480px) and (max-width: 1199px) {
 		width: 450px;
 		height: 50px;
 		justify-content: center;
@@ -300,7 +302,7 @@
 }
 
 .form-send__btn {
-	@media screen and (max-width: 1200px) {
+	@media screen and (max-width: 1199px) {
 		display: flex;
 		justify-content: center;
 	}
