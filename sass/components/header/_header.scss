@@ -24,11 +24,3 @@
 		width: 1200px;
 	}
 }
-
-.flexbox .menu-container {
-	@media screen and (min-width: 1200px) {
-		display: flex;
-		justify-content: flex-start;
-		align-items: center;
-	}
-}
