@@ -55,6 +55,7 @@
 		&.is-open {
 			display: flex;
 			flex-direction: column;
+			z-index: 3;
 		}
 	}
 }

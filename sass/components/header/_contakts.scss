@@ -1,18 +1,10 @@
 /* КОНТАКТЫ */
 
 .contakts-header {
-	/* @media screen and (max-width: 767px) {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	} */
 	@media screen and (min-width: 768px) {
 		display: block;
 	}
-	/* @media screen and (max-width: 1199px) {
-		justify-content: flex-end;
-		align-items: center;
-	} */
+
 	@media screen and (min-width: 1200px) {
 		display: inline-flex;
 		justify-content: center;

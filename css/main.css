@@ -392,6 +392,29 @@ body {
   display: flex;
 }
 
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  main {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    width: 1600px;
+  }
+}
+
 /* ШАПКА */
 .header {
   background: #ffffff;
@@ -590,9 +613,6 @@ body {
 
 .active-link {
   position: relative;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 14px;
   text-decoration: none;
   color: #2196f3;
 }
@@ -616,18 +636,6 @@ body {
 }
 
 /* КОНТАКТЫ */
-.contakts-header {
-  /* @media screen and (max-width: 767px) {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	} */
-  /* @media screen and (max-width: 1199px) {
-		justify-content: flex-end;
-		align-items: center;
-	} */
-}
-
 @media screen and (min-width: 768px) {
   .contakts-header {
     display: block;
@@ -858,6 +866,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    z-index: 3;
   }
 }
 
@@ -2007,10 +2016,6 @@ body {
 
 /* СЕКЦИЯ 4 "Постоянные клиенты" */
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
-.section--client {
-  /* min-width: 1600px; */
-}
-
 @media screen and (min-width: 480px) {
   .section--client {
     width: 480px;
@@ -2341,7 +2346,6 @@ body {
 }
 
 .contakts--style {
-  /* width: 224px; */
   margin-right: 70px;
 }
 
