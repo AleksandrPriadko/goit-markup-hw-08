@@ -92,9 +92,21 @@
 		background-size: cover;
 
 		@media screen and (min-device-pixel-ratio: 2),
+			screen and (-webkit-min-device-pixel-ratio: 2),
+			screen and (-o-min-device-pixel-ratio: 2/1),
 			screen and (min-resolution: 192dpi),
 			screen and (min-resolution: 2dppx) {
 			.fon {
+				background-image: -webkit-gradient(
+						linear,
+						left top,
+						left bottom,
+						from(rgba(47, 48, 58, 0.4)),
+						to(rgba(47, 48, 58, 0.4))
+					),
+					url("../../../images/header1600@2x.jpg");
+				background-image: -o-linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+					url("../../../images/header1600@2x.jpg");
 				background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 					url("../../../images/header1600@2x.jpg");
 			}
