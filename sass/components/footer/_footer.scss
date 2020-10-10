@@ -1,13 +1,23 @@
 /*ПОДВАЛ*/
 .footer {
 	background-color: $b-cdark;
-	max-width: 1600px;
+	width: 1600px;
 	padding-top: 60px;
 	padding-bottom: 60px;
 	margin-left: auto;
 	margin-right: auto;
+	@media screen and (max-width: 767px) {
+		max-width: 100%;
+	}
 
-	@media screen and (min-width: 480px) {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		max-width: 100%;
+	}
+
+	/* margin-left: auto;
+	margin-right: auto; */
+
+	/* @media screen and (min-width: 480px) {
 		width: 480px;
 	}
 
@@ -18,7 +28,7 @@
 		width: 1600px;
 		margin-left: auto;
 		margin-right: auto;
-	}
+	} */
 }
 
 .footer .footer-container {
