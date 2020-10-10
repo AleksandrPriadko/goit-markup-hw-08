@@ -48,7 +48,8 @@
 }
 @media screen and (max-width: 767px) {
 	.fon {
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/Header450.jpg);
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../../../images/Header450.jpg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -57,14 +58,16 @@
 			screen and (min-resolution: 192dpi),
 			screen and (min-resolution: 2dppx) {
 			.fon {
-				background-image: url("../../../images/Header450@2x.jpg");
+				background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+					url("../../../images/Header450@2x.jpg");
 			}
 		}
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 	.fon {
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/header768.jpg);
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../../../images/header768.jpg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -73,15 +76,17 @@
 			screen and (min-resolution: 192dpi),
 			screen and (min-resolution: 2dppx) {
 			.fon {
-				background-image: url("../../../images/header768@2x.jpg");
+				background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+					url("../../../images/header768@2x.jpg");
 			}
 		}
 	}
 }
 @media screen and (min-width: 1200px) {
 	.fon {
-		max-width: 1600px;
-		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/header1600.jpg);
+		/* max-width: 1600px; */
+		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url("../../../images/header1600.jpg");
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -90,7 +95,8 @@
 			screen and (min-resolution: 192dpi),
 			screen and (min-resolution: 2dppx) {
 			.fon {
-				background-image: url("../../../images/header1600@2x.jpg");
+				background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+					url("../../../images/header1600@2x.jpg");
 			}
 		}
 	}
